@@ -1,0 +1,38 @@
+package com.alibaba.sdk.android.httpdns;
+
+import android.content.Context;
+import android.content.SharedPreferences;
+/* loaded from: classes.dex */
+public class b {
+    private static SharedPreferences a = null;
+
+    /* renamed from: a  reason: collision with other field name */
+    private static boolean f81a = true;
+
+    public static void a(boolean z) {
+        f81a = z;
+        SharedPreferences sharedPreferences = a;
+        if (sharedPreferences != null) {
+            SharedPreferences.Editor edit = sharedPreferences.edit();
+            edit.putBoolean("key_enable", z);
+            edit.apply();
+        }
+        i.d("[EnableManager] enable: " + z);
+    }
+
+    public static boolean a() {
+        return f81a;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public static void init(Context context) {
+        if (context != null) {
+            a = context.getSharedPreferences("httpdns_config_enable", 0);
+            SharedPreferences sharedPreferences = a;
+            if (sharedPreferences != null) {
+                f81a = sharedPreferences.getBoolean("key_enable", true);
+            }
+            i.d("[EnableManager] init enable: " + f81a);
+        }
+    }
+}

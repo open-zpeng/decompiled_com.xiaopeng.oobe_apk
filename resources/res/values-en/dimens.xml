@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="x_segment_standard_high">88dp</dimen>
+    <dimen name="x_segment_standard_len">250dp</dimen>
+    <dimen name="x_segment_standard_len_over_four">200dp</dimen>
+</resources>
