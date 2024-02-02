@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaopeng.xui.widget.XRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.xiaopeng.xui.widget.XTextView android:textSize="@dimen/x_font_body_02_size" android:textColor="@color/x_color_text_2" android:id="@+id/tv_content_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/dialog_full_time_content_1"/>
+    <com.xiaopeng.xui.widget.XTextView android:textSize="@dimen/x_font_body_02_size" android:textColor="@color/x_color_text_2" android:id="@+id/tv_content_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:text="@string/dialog_full_time_content_2" android:layout_below="@+id/tv_content_1"/>
+    <com.xiaopeng.xui.widget.XLinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:layout_below="@+id/tv_content_2">
+        <com.xiaopeng.xui.widget.XTextView android:textSize="@dimen/x_font_body_02_size" android:textColor="@color/x_color_text_2" android:id="@+id/tv_content_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vui_privacy_content" android:layout_below="@+id/btn_never"/>
+        <com.xiaopeng.xui.widget.XTextView android:textSize="@dimen/x_font_body_02_size" android:textColor="@color/qrcode_privacy_policy_btn_color" android:id="@+id/tv_privacy_link" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/tv_privacy_content"/>
+    </com.xiaopeng.xui.widget.XLinearLayout>
+</com.xiaopeng.xui.widget.XRelativeLayout>
